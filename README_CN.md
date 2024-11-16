@@ -1,15 +1,12 @@
 [English Documentation](README.md) | [中文文档](README_CN.md)
 
-
 # nextjs-saas-template
+一个简单易使用、seo 友好的 next.js 模板，没有复杂的操作和配置，适合快速搭建一个落地页、saas 网站等。
 
-A simple and user-friendly, SEO-friendly Next.js template designed for quick setup of landing pages, SaaS websites, and more, without complex configurations.
+模板仍在持续更新中...
 
-The template is continuously updated…
-
-## Preview
-
-- `template-custom Black-and-white minimalist theme`
+## 预览
+- `template-custom 黑白简约主题`
 
 ![1](./images/1.png)
 
@@ -21,7 +18,7 @@ The template is continuously updated…
 
 ![1](./images/11.png)
 
-- `template-gradient Colorful gradient theme`
+- `template-gradient 彩色渐变主题`
 
 ![1](./images/5.png)
 
@@ -35,32 +32,29 @@ The template is continuously updated…
 
 ![1](./images/10.png)
 
-## Tech Stack
-
+## 技术栈
 - next.js 14
 - shadcn/ui
 - radix-ui
 - tailwindcss
 - lucide   
 - i18next
+  
+## 功能
+- 暗黑模式
+- SEO 友好
+- 多语言支持
+- 博客
+- 价格
+- 登录/注册
+- 个人中心
 
-## Features
-
-- Dark mode
-- SEO-friendly
-- Multi-language support
-- Blog
-- Pricing
-- Login/Registration
-- User dashboard
-
-## Usage
-
-- Clone the repository
+## 使用
+- 克隆项目
   ```bash
   git clone git@github.com:jiweiyeah/nextjs-saas-template.git
   ```
-- Install dependencies
+- 安装依赖
   ```bash
   cd nextjs-saas-template/template-custom
   npm install
@@ -68,13 +62,13 @@ The template is continuously updated…
   cd nextjs-saas-template/template-gradient
   npm install
   ```
-- Configure environment variables
+- 环境变量
   ```bash
   NEXT_PUBLIC_SUPABASE_URL=xxxxx
   NEXT_PUBLIC_SUPABASE_ANON_KEY=xxxxx
   NEXT_PUBLIC_APP_URL=xxxxx
   ```
-- Run the project
+- 运行项目
   ```bash
   cd nextjs-saas-template/template-custom
   npm run dev
@@ -83,23 +77,22 @@ The template is continuously updated…
   npm run dev
   ```
 
-## Deployment
+## 部署
 - [Vercel](https://vercel.com/docs)
 - [Netlify](https://docs.netlify.com/frameworks/next-js/overview/)
 
-## Contact
+## 联系
+欢迎各位与我联系，提出宝贵意见！
 
-Feel free to reach out and share your valuable feedback!
+邮箱: freeourdays@gmail.com
 
-Email: freeourdays@gmail.com
+推特: https://x.com/freeourdays
 
-Twitter: https://x.com/freeourdays
-
-WeChat: yeheboo
+微信: yeheboo
 
 <table>
   <tr>
-    <td><img src="./images/WechatIMG248.jpg" alt="Image 1" width="200"></td>
-    <td><img src="./images/WechatIMG276.jpg" alt="Image 2" width="200"></td>
+    <td><img src="./images/WechatIMG248.jpg" alt="图片1" width="200"></td>
+    <td><img src="./images/WechatIMG276.jpg" alt="图片2" width="200"></td>
   </tr>
 </table>
