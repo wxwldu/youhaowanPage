@@ -17,7 +17,10 @@ export function NavbarActions({ lang, dict }: { lang: Locale; dict: any }) {
   useEffect(() => {
     // 初始检查登录状态
     const checkLoginStatus = () => {
-      const userEmail = localStorage.getItem('userEmail')
+      const userEmail = decodeURIComponent(document.cookie
+        .split('; ')
+        .find(row => row.startsWith('userEmail='))
+        ?.split('=')[1] || '');
       setIsLoggedIn(!!userEmail)
     }
 
@@ -40,10 +43,10 @@ export function NavbarActions({ lang, dict }: { lang: Locale; dict: any }) {
   }, [])
 
   const handleLogout = () => {
-    localStorage.removeItem('userEmail')
-    setIsLoggedIn(false)
-    router.refresh()
-    router.push(`/${lang}`)
+    document.cookie = 'userEmail=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    window.dispatchEvent(new Event('loginStateChange'));
+    router.refresh();
+    router.push(`/${lang}`);
   }
 
   return (

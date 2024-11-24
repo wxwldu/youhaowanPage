@@ -39,6 +39,9 @@
 - tailwindcss
 - lucide   
 - i18next
+- supabase
+- google oauth
+- github oauth
   
 ## 功能
 - 暗黑模式
@@ -46,7 +49,7 @@
 - 多语言支持
 - 博客
 - 价格
-- 登录/注册
+- 登录/注册(邮箱、Google、Github)
 - 个人中心
 
 ## 使用
@@ -67,6 +70,15 @@
   NEXT_PUBLIC_SUPABASE_URL=xxxxx
   NEXT_PUBLIC_SUPABASE_ANON_KEY=xxxxx
   NEXT_PUBLIC_APP_URL=xxxxx
+
+  # Github OAuth
+  GITHUB_CLIENT_ID=xxxxx
+  GITHUB_CLIENT_SECRET=xxxxx 
+  GITHUB_CALLBACK_URL=xxxxx/api/auth/github/callback
+
+  # Google OAuth
+  GOOGLE_CLIENT_ID=xxxxx
+  GOOGLE_CLIENT_SECRET=xxxxx
   ```
 - 运行项目
   ```bash

@@ -26,11 +26,14 @@ export default function ProfilePage({
 
     // 加载用户数据
     async function loadUserData() {
-      const userEmail = localStorage.getItem('userEmail')
+      const userEmail = decodeURIComponent(document.cookie
+        .split('; ')
+        .find(row => row.startsWith('userEmail='))
+        ?.split('=')[1] || '');
       
       if (!userEmail) {
-        router.push(`/${lang}/signin`)
-        return
+        router.push(`/${lang}/signin`);
+        return;
       }
 
       try {
@@ -38,15 +41,15 @@ export default function ProfilePage({
           .from('users')
           .select()
           .eq('email', userEmail)
-          .single()
+          .single();
 
-        if (error) throw error
-        setUserData(data)
+        if (error) throw error;
+        setUserData(data);
       } catch (error) {
-        console.error('Error loading user data:', error)
-        router.push(`/${lang}/signin`)
+        console.error('Error loading user data:', error);
+        router.push(`/${lang}/signin`);
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
     }
 
@@ -116,10 +119,6 @@ export default function ProfilePage({
               <CardTitle>{dict.profile.subscription}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div>
-                <div className="text-sm text-muted-foreground">{dict.profile.currentPlan}</div>
-                <div>{userData.plans_end ? dict.profile.proPlan : dict.profile.freePlan}</div>
-              </div>
               {userData.plans_end && (
                 <div>
                   <div className="text-sm text-muted-foreground">{dict.profile.expireDate}</div>

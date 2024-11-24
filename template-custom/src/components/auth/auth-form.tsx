@@ -10,6 +10,7 @@ import type { Locale } from "@/i18n/config"
 import { supabase } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
 import toast from "react-hot-toast"
+import Link from "next/link"
 
 interface AuthFormProps {
   mode: "signin" | "signup"
@@ -58,11 +59,11 @@ export function AuthForm({ mode, lang }: AuthFormProps) {
           throw new Error(dict.auth.signin.errors?.wrongPassword || '密码错误')
         }
 
-        localStorage.setItem('userEmail', email)
-        window.dispatchEvent(new Event('loginStateChange'))
-        toast.success(dict.auth.signin.success || "登录成功!")
-        router.refresh()
-        router.push(`/${lang}`)
+        document.cookie = `userEmail=${encodeURIComponent(email)}; path=/; max-age=${60 * 60 * 24 * 30}; secure; samesite=lax`;
+        window.dispatchEvent(new Event('loginStateChange'));
+        toast.success(dict.auth.signin.success || "登录成功!");
+        router.refresh();
+        router.push(`/${lang}`);
       } else {
         const { data: existingUser } = await supabase
           .from('users')
@@ -117,10 +118,21 @@ export function AuthForm({ mode, lang }: AuthFormProps) {
               disabled={isLoading}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              className="rounded-[0.75rem]"
             />
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="password">{dict.auth.form.password}</Label>
+            <div className="flex items-center justify-between">
+              <Label htmlFor="password">{dict.auth.form.password}</Label>
+              {mode === "signin" && (
+                <Link
+                  href={`/${lang}/forgot-password`}
+                  className="text-sm text-muted-foreground hover:text-primary"
+                >
+                  {dict.auth.form.forgotPassword}
+                </Link>
+              )}
+            </div>
             <Input
               id="password"
               type="password"
@@ -128,6 +140,7 @@ export function AuthForm({ mode, lang }: AuthFormProps) {
               disabled={isLoading}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              className="rounded-[0.75rem]"
             />
           </div>
           <Button disabled={isLoading}>
@@ -149,11 +162,19 @@ export function AuthForm({ mode, lang }: AuthFormProps) {
         </div>
       </div>
       <div className="grid grid-cols-2 gap-4">
-        <Button variant="outline" disabled={isLoading}>
+        <Button 
+          variant="outline" 
+          disabled={isLoading}
+          onClick={() => window.location.href = `/api/auth/google?lang=${lang}`}
+        >
           <Icons.google className="mr-2 h-4 w-4" />
           Google
         </Button>
-        <Button variant="outline" disabled={isLoading}>
+        <Button 
+          variant="outline" 
+          disabled={isLoading}
+          onClick={() => window.location.href = `/api/auth/github?lang=${lang}`}
+        >
           <Icons.gitHub className="mr-2 h-4 w-4" />
           GitHub
         </Button>

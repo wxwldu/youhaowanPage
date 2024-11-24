@@ -43,6 +43,9 @@ The template is continuously updated…
 - tailwindcss
 - lucide   
 - i18next
+- supabase
+- google oauth
+- github oauth
 
 ## Features
 
@@ -51,7 +54,7 @@ The template is continuously updated…
 - Multi-language support
 - Blog
 - Pricing
-- Login/Registration
+- Login/Registration(Email, Github, Google)
 - User dashboard
 
 ## Usage
@@ -73,6 +76,15 @@ The template is continuously updated…
   NEXT_PUBLIC_SUPABASE_URL=xxxxx
   NEXT_PUBLIC_SUPABASE_ANON_KEY=xxxxx
   NEXT_PUBLIC_APP_URL=xxxxx
+
+  # Github OAuth
+  GITHUB_CLIENT_ID=xxxxx
+  GITHUB_CLIENT_SECRET=xxxxx 
+  GITHUB_CALLBACK_URL=xxxxx/api/auth/github/callback
+
+  # Google OAuth
+  GOOGLE_CLIENT_ID=xxxxx
+  GOOGLE_CLIENT_SECRET=xxxxx
   ```
 - Run the project
   ```bash

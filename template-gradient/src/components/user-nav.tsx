@@ -23,11 +23,14 @@ export function UserNav({ lang, dict, onLogout }: UserNavProps) {
   const router = useRouter()
 
   useEffect(() => {
-    const userEmail = localStorage.getItem('userEmail')
+    const userEmail = decodeURIComponent(document.cookie
+      .split('; ')
+      .find(row => row.startsWith('userEmail='))
+      ?.split('=')[1] || '');
     if (userEmail) {
-      setEmail(userEmail)
+      setEmail(userEmail);
     }
-  }, [])
+  }, []);
 
   return (
     <DropdownMenu>
