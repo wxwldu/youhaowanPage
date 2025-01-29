@@ -1,3 +1,6 @@
+公司官网
+
+
 [English Documentation](README.md) | [中文文档](README_CN.md)
 
 
@@ -11,29 +14,9 @@ The template is continuously updated…
 
 - `template-custom Black-and-white minimalist theme`
 
-![1](./images/1.png)
-
-![1](./images/2.png)
-
-![1](./images/3.png)
-
-![1](./images/4.png)
-
-![1](./images/11.png)
 
 - `template-gradient Colorful gradient theme`
 
-![1](./images/5.png)
-
-![1](./images/6.png)
-
-![1](./images/7.png)
-
-![1](./images/8.png)
-
-![1](./images/9.png)
-
-![1](./images/10.png)
 
 ## Tech Stack
 
