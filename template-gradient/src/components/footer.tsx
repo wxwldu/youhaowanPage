@@ -29,7 +29,7 @@ export default async function Footer({
       { name: dict.footer.links.feedback, href: `/${lang}/feedback` },
       { name: dict.footer.links.status, href: `/${lang}/status` },
     ],
-    [dict.footer.company]: [
+    [dict.footer.information]: [
       { name: dict.footer.links.about, href: `/${lang}/about` },
       { name: dict.footer.links.terms, href: `/${lang}/terms` },
       { name: dict.footer.links.privacy, href: `/${lang}/privacy` },

@@ -10,17 +10,10 @@
     "profile": "Profile"
   },
   "home": {
-    "hero": {
-      "title": "Browse More Efficiently",
-      "description": "Our Chrome extension helps you better manage tabs and improve productivity",
-      "learnMore": "Learn More",
-      "watchDemo": "Watch Demo"
-    },
-    "cta": {
-      "title": "Get Started Now",
-      "description": "Download our Chrome extension for free and enhance your browsing experience",
-      "button": "Get Chrome Extension"
-    }
+    "title": "Explore the World, Play Boundlessly",
+      "description": "在乐趣中发现无限可能！",
+      "learnMore": "游世界，玩无限——在乐趣中发现无限可能！",
+      "watchDemo": "查看演示"
   },
   "footer": {
     "product": "Product",
@@ -28,7 +21,11 @@
     "social": "Social",
     "support": "Support",
     "company": "Company",
-    "copyright": "© 2024 Chrome Extension. All rights reserved.",
+    "information": "Information",
+    "copyright": "© 2025 游好玩. All rights reserved.",
+    "wexinpay": "WeChat Pay",
+    "AliPay": "AliPay",
+    "buyCoffee": "Buy Me A Coffee",
     "links": {
       "features": "Features",
       "pricing": "Pricing",
@@ -47,23 +44,26 @@
       "privacy": "Privacy",
       "jobs": "Jobs",
       "blog": "Blog",
+      "google": "Google",
+      "meta": "Meta",
       "twitter": "Twitter",
       "github": "Github",
       "jike": "Jike",
+      "wechat": "WeChat",
       "xhs": "XiaoHongShu",
-      "bento": "Bento",
-      "freeourdays": "Free Our Days",
-      "githubtree": "Github Tree Map",
-      "distributer": "Distributer"
+      "game1": "游游爱收纳",
+      "game2": "倒水大师",
+      "game3": "有点好玩"
     }
   },
   "metadata": {
-    "title": "Chrome Extension - Enhance Your Browsing Experience",
-    "description": "A powerful Chrome extension that helps you better manage tabs and improve productivity",
-    "keywords": "Chrome Extension, Tab Management, Productivity Tools, Browser Extensions"
+    "title": "游好玩 - Enhance Your Browsing Experience",
+    "description": "A powerful 游好玩 that helps you better manage tabs and improve productivity",
+    "keywords": "游好玩, Tab Management, Productivity Tools, Browser Extensions"
   },
   "common": {
-    "brand": "Chrome Extension",
+    "name":"游好玩科技（深圳）有限公司",
+    "brand": "游好玩",
     "loading": "Loading..."
   },
   "features": {
@@ -130,14 +130,14 @@
   "blog": {
     "backToList": "Back to Blog List",
     "title": "Blog Posts",
-    "description": "Sharing Chrome extension development experiences and browsing tips",
+    "description": "Sharing 游好玩 development experiences and browsing tips",
     "loadMore": "Load More",
     "posts": [
          {
            "id": 1,
-           "title": "Chrome Extension Development Guide -- English",
-           "description": "Learn how to develop your first Chrome extension",
-           "date": "2024-03-15",
+           "title": "游好玩 Development Guide -- English",
+           "description": "Learn how to develop your first 游好玩",
+           "date": "2025-03-15",
            "readTime": "10 min read",
            "slug": "chrome-extension-development-guide"
          }

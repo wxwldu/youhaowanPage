@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation"
 import { ThemeToggle } from "./theme-toggle"
 import { LanguageSwitcher } from "./language-switcher"
 import { UserNav } from "./user-nav"
-import { Button } from "./ui/button"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import type { Locale } from "@/i18n/config"
@@ -57,7 +56,7 @@ export function NavbarActions({ lang, dict }: { lang: Locale; dict: any }) {
         <UserNav lang={lang} dict={dict} onLogout={handleLogout} />
       ) : (
         <Link href={`/${lang}/signin`}>
-          <Button variant="ghost" size="sm">{dict.nav.signin}</Button>
+          {/* <Button variant="ghost" size="sm">{dict.nav.signin}</Button> */}
         </Link>
       )}
     </div>

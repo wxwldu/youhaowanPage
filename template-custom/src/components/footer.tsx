@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"; 
 import { ThumbsUp } from "lucide-react"
 import { getDictionary } from "@/i18n/get-dictionary"
 import type { Locale } from "@/i18n/config"
@@ -12,28 +13,29 @@ export default async function Footer({
 
   const footerLinks = {
     [dict.footer.product]: [
-      { name: dict.footer.links.bento, href: `https://bento.me/yeheboo` },
-      { name: dict.footer.links.freeourdays, href: `https://freeourdays.com` },
-      { name: dict.footer.links.distributer, href: `https://distributer.top` },
-      { name: dict.footer.links.githubtree, href: `https://chromewebstore.google.com/detail/github-tree-map/aagofmkgihihajogoojeamnfgpgmehnn` },
+    ],
+    [dict.footer.product]: [
+      { name: dict.footer.links.game1, href: `` },
+      { name: dict.footer.links.game2, href: `` },
+      { name: dict.footer.links.game3, href: `` }
     ],
     [dict.footer.social]: [
-      { name: dict.footer.links.twitter, href: `https://x.com/freeourdays` },
-      { name: dict.footer.links.github, href: `https://github.com/jiweiyeah` },
-      { name: dict.footer.links.jike, href: `https://okjk.co/re05p2` },
-      { name: dict.footer.links.xhs, href: `https://okjk.co/re05p2` },
+      { name: dict.footer.links.google, href: `` },
+      { name: dict.footer.links.wechat, href: `` },
+      { name: dict.footer.links.xhs, href: `` },
     ],
     [dict.footer.support]: [
-      { name: dict.footer.links.help, href: `/${lang}/help` },
-      { name: dict.footer.links.contact, href: `/${lang}/contact` },
-      { name: dict.footer.links.feedback, href: `/${lang}/feedback` },
-      { name: dict.footer.links.status, href: `/${lang}/status` },
+      // { name: dict.footer.links.help, href: `/${lang}/footer/help` },
+      { name: dict.footer.links.contact, href: `/${lang}/footer/contact` },
+      // { name: dict.footer.links.feedback, href: `/${lang}/footer/feedback` },
+      // { name: dict.footer.links.status, href: `/${lang}/footer/status` },
     ],
-    [dict.footer.company]: [
-      { name: dict.footer.links.about, href: `/${lang}/about` },
-      { name: dict.footer.links.terms, href: `/${lang}/terms` },
-      { name: dict.footer.links.privacy, href: `/${lang}/privacy` },
-      { name: dict.footer.links.jobs, href: `/${lang}/jobs` },
+    [dict.footer.information]: [
+      // <Footer lang={lang} />
+      { name: dict.footer.links.about, href: `/${lang}/footer/about` },
+      // { name: dict.footer.links.terms, href: `/${lang}/footer/terms` },
+      { name: dict.footer.links.privacy, href: `/${lang}/footer/privacy` },
+      // { name: dict.footer.links.jobs, href: `/${lang}/footer/jobs` },
     ],
   }
 
@@ -41,7 +43,11 @@ export default async function Footer({
     <footer className="relative w-full bg-background/40 backdrop-blur-sm">
       <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-background/5 to-transparent pointer-events-none" />
       <div className="container relative px-4 md:px-6 py-12 md:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="flex flex-col items-center space-y-3">
+  <Image src="/images/logo.png" alt="Company Logo" width={100} height={100} />
+  <h4 className="text-base font-semibold">{dict.common.brand}</h4>
+</div>
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category} className="space-y-3 text-center">
               <h4 className="text-base font-semibold">{category}</h4>

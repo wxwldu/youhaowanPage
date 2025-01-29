@@ -28,7 +28,8 @@
     "social": "社交",
     "support": "支持",
     "company": "公司",
-    "copyright": "© 2024 Chrome插件. 保留所有权利.",
+    "information": "信息",
+    "copyright": "© 2025 游好玩. 保留所有权利.",
     "links": {
       "features": "功能",
       "pricing": "价格",
@@ -58,12 +59,12 @@
     }
   },
   "metadata": {
-    "title": "Chrome插件 - 提升您的浏览体验",
-    "description": "一款强大的Chrome插件，帮助您更好地管理标签页、提升工作效率",
-    "keywords": "Chrome插件, 标签管理, 生产力工具, 浏览器扩展"
+    "title": "游好玩 - 提升您的浏览体验",
+    "description": "一款强大的游好玩，帮助您更好地管理标签页、提升工作效率",
+    "keywords": "游好玩, 标签管理, 生产力工具, 浏览器扩展"
   },
   "common": {
-    "brand": "Chrome插件",
+    "brand": "游好玩",
     "loading": "加载中..."
   },
   "features": {
@@ -130,14 +131,14 @@
   "blog": {
     "backToList": "返回博客列表",
     "title": "博客文章",
-    "description": "分享Chrome插件开发经验和网页浏览技巧",
+    "description": "分享游好玩开发经验和网页浏览技巧",
     "loadMore": "加载更多",
     "posts": [
          {
            "id": 1,
-           "title": "Chrome插件开发入门指南--中文",
-           "description": "学习如何开发你的第一个Chrome插件",
-           "date": "2024-03-15",
+           "title": "游好玩开发入门指南--中文",
+           "description": "学习如何开发你的第一个游好玩",
+           "date": "2025-03-15",
            "readTime": "10分钟阅读",
            "slug": "chrome-extension-development-guide"
          }

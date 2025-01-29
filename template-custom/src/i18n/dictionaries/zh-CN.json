@@ -10,17 +10,10 @@
     "download": "下载插件"
   },
   "home": {
-    "hero": {
-      "title": "让浏览更高效",
-      "description": "我们的 Chrome 插件帮助您更好地管理标签页、提升工作效率",
-      "learnMore": "了解更多",
-      "watchDemo": "查看演示"
-    },
-    "cta": {
-      "title": "立即安装使用",
-      "description": "免费下载我们的 Chrome 插件，提升您的浏览体验",
-      "button": "获取 Chrome 插件"
-    }
+    "title": "游世界，玩无限",
+      "description": "在乐趣中发现无限可能！",
+      "learnMore": "游世界，玩无限——在乐趣中发现无限可能！",
+      "watchDemo": ""
   },
   "footer": {
     "product": "产品",
@@ -28,7 +21,11 @@
     "social": "社交",
     "support": "支持",
     "company": "公司",
-    "copyright": "© 2024 Chrome插件. 保留所有权利.",
+    "information": "信息",
+    "copyright": "© 2025 游好玩. 保留所有权利.",
+    "wexinpay": "微信支付",
+    "AliPay": "阿里支付",
+    "buyCoffee": "请我喝咖啡",
     "links": {
       "features": "功能",
       "pricing": "价格",
@@ -49,21 +46,24 @@
       "blog": "博客",
       "twitter": "推特",
       "github": "Github",
+      "google": "谷歌",
+      "meta": "Meta",
       "jike": "即刻",
       "xhs": "小红书",
-      "bento": "yeheboo",
-      "freeourdays": "freeourdays",
-      "githubtree": "Github Tree Map",
-      "distributer": "Distributer"
+      "wechat": "微信",
+      "game1": "游游爱收纳",
+      "game2": "倒水大师",
+      "game3": "有点好玩"
     }
   },
   "metadata": {
-    "title": "Chrome插件 - 提升您的浏览体验",
-    "description": "一款强大的Chrome插件，帮助您更好地管理标签页、提升工作效率",
-    "keywords": "Chrome插件, 标签管理, 生产力工具, 浏览器扩展"
+    "title": "游好玩 - 提升您的浏览体验",
+    "description": "一款强大的游好玩，帮助您更好地管理标签页、提升工作效率",
+    "keywords": "游好玩, 标签管理, 生产力工具, 浏览器扩展"
   },
   "common": {
-    "brand": "Chrome插件",
+    "name":"游好玩科技（深圳）有限公司",
+    "brand": "游好玩",
     "loading": "加载中..."
   },
   "features": {
@@ -130,14 +130,14 @@
   "blog": {
     "backToList": "返回博客列表",
     "title": "博客文章",
-    "description": "分享Chrome插件开发经验和网页浏览技巧",
+    "description": "分享游好玩开发经验和网页浏览技巧",
     "loadMore": "加载更多",
     "posts": [
          {
            "id": 1,
-           "title": "Chrome插件开发入门指南--中文",
-           "description": "学习如何开发你的第一个Chrome插件",
-           "date": "2024-03-15",
+           "title": "游好玩开发入门指南--中文",
+           "description": "学习如何开发你的第一个游好玩",
+           "date": "2025-03-15",
            "readTime": "10分钟阅读",
            "slug": "chrome-extension-development-guide"
          }

@@ -1,11 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { getDictionary } from "@/i18n/get-dictionary"
 import type { Locale } from "@/i18n/config"
-import { 
-  BookOpen, 
-  Bookmark, 
-  Share2, 
-  Shield 
+import Image from "next/image";
+import {
+  Bookmark,
+  Share2,
+  Shield
 } from "lucide-react"
 
 export default async function Features({
@@ -16,11 +16,11 @@ export default async function Features({
   const dict = await getDictionary(lang)
 
   const features = [
-    {
-      icon: <BookOpen className="h-6 w-6" />,
-      title: dict.features.tabs.title,
-      description: dict.features.tabs.description
-    },
+    // {
+    //   icon: <BookOpen className="h-6 w-6" />,
+    //   title: dict.features.tabs.title,
+    //   description: dict.features.tabs.description
+    // },
     {
       icon: <Bookmark className="h-6 w-6" />,
       title: dict.features.bookmarks.title,
@@ -43,24 +43,28 @@ export default async function Features({
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-            {dict.features.title}
+            {dict.home.title}
           </h2>
           <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            {dict.features.description}
+            {dict.home.description}
           </p>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mt-8">
           {features.map((feature, index) => (
-            <Card key={index}>
-              <CardHeader>
+            <Card key={index} className="aspect-square  flex flex-col">
+              {/* <CardHeader>
                 <div className="mb-2">{feature.icon}</div>
                 <CardTitle>{feature.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-1">
                 <p className="text-sm text-gray-500">
                   {feature.description}
                 </p>
-              </CardContent>
+              </CardContent> */}
+              {/* feature.icon */}
+              <Image src="/images/wechat.JPG" alt="games"
+                width={300}
+                height={300} className="w-full h-full object-contain" />
             </Card>
           ))}
         </div>
