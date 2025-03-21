@@ -52,7 +52,7 @@ export default async function Features({
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mt-8">
           {features.map((feature, index) => (
             <Card key={index} className="aspect-square  flex flex-col">
-              {/* <CardHeader>
+              <CardHeader>
                 <div className="mb-2">{feature.icon}</div>
                 <CardTitle>{feature.title}</CardTitle>
               </CardHeader>
@@ -60,7 +60,7 @@ export default async function Features({
                 <p className="text-sm text-gray-500">
                   {feature.description}
                 </p>
-              </CardContent> */}
+              </CardContent>
               {/* feature.icon */}
               <Image src="/images/wechat.JPG" alt="games"
                 width={300}

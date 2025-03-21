@@ -1,16 +1,18 @@
 
 import Head from 'next/head';
-import { getDictionary } from "@/i18n/get-dictionary";
-import type { Locale } from "@/i18n/config";
+// import { getDictionary } from "@/i18n/get-dictionary";
+// import type { Locale } from "@/i18n/config";
 
 
 
-export default  async function PrivacyPolicy({
-  lang
-}: {
-  lang: Locale
-}) {
-  const dict = await getDictionary(lang)
+export default  async function PrivacyPolicy(
+  // {
+//   // lang
+// }: {
+//   lang: Locale
+// }
+) {
+  // const dict = await getDictionary(lang)
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -28,7 +30,7 @@ export default  async function PrivacyPolicy({
       <div className="prose max-w-2xl mx-auto">
         <h2>1. 我们收集的信息</h2>
         <p>
-          [{dict.common.name}]（以下简称“我们”或“公司”）致力于保护您的隐私。我们可能会收集以下类型的个人信息：
+        游好玩科技（深圳）有限公司（以下简称“我们”或“公司”）致力于保护您的隐私。我们可能会收集以下类型的个人信息：
         </p>
         <ul>
           <li>
