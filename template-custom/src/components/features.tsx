@@ -1,12 +1,14 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle } from "@/components/ui/card"
 import { getDictionary } from "@/i18n/get-dictionary"
 import type { Locale } from "@/i18n/config"
 import Image from "next/image";
 import {
   Bookmark,
-  Share2,
-  Shield
+  // Share2,
+  // Shield
 } from "lucide-react"
+import Link from "next/link";
+// import { url } from "inspector";
 
 export default async function Features({
   lang
@@ -23,19 +25,35 @@ export default async function Features({
     // },
     {
       icon: <Bookmark className="h-6 w-6" />,
-      title: dict.features.bookmarks.title,
-      description: dict.features.bookmarks.description
-    },
-    {
-      icon: <Share2 className="h-6 w-6" />,
-      title: dict.features.share.title,
-      description: dict.features.share.description
-    },
-    {
-      icon: <Shield className="h-6 w-6" />,
-      title: dict.features.security.title,
-      description: dict.features.security.description
+      title: dict.features.bookmarks[0].title,
+      description: dict.features.bookmarks[0].description,
+      url:dict.features.bookmarks[0].url
+    },{
+      icon: <Bookmark className="h-6 w-6" />,
+      title: dict.features.bookmarks[1].title,
+      description: dict.features.bookmarks[1].description,
+      url:dict.features.bookmarks[0].url
+    },{
+      icon: <Bookmark className="h-6 w-6" />,
+      title: dict.features.bookmarks[2].title,
+      description: dict.features.bookmarks[2].description,
+      url:dict.features.bookmarks[0].url
+    },{
+      icon: <Bookmark className="h-6 w-6" />,
+      title: dict.features.bookmarks[3].title,
+      description: dict.features.bookmarks[3].description,
+      url:dict.features.bookmarks[0].url
     }
+    // {
+    //   icon: <Share2 className="h-6 w-6" />,
+    //   title: dict.features.share.title,
+    //   description: dict.features.share.description
+    // },
+    // {
+    //   icon: <Shield className="h-6 w-6" />,
+    //   title: dict.features.security.title,
+    //   description: dict.features.security.description
+    // }
   ]
 
   return (
@@ -50,21 +68,25 @@ export default async function Features({
           </p>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mt-8">
-          {features.map((feature, index) => (
+        
+  {/* <a target="_blank">Click this link</a> */}
+  {features.map((feature, index) => (
             <Card key={index} className="aspect-square  flex flex-col">
               <CardHeader>
-                <div className="mb-2">{feature.icon}</div>
+                {/* <div className="mb-2">{feature.icon}</div> */}
                 <CardTitle>{feature.title}</CardTitle>
               </CardHeader>
-              <CardContent className="flex-1">
+              {/* <CardContent className="flex-1">
                 <p className="text-sm text-gray-500">
                   {feature.description}
                 </p>
-              </CardContent>
+              </CardContent> */}
               {/* feature.icon */}
+              <Link href={feature.url}>
               <Image src="/images/wechat.JPG" alt="games"
                 width={300}
                 height={300} className="w-full h-full object-contain" />
+                </Link>
             </Card>
           ))}
         </div>

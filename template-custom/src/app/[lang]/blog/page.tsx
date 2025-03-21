@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
-  CardDescription,
+  // CardContent,
+  // CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -18,31 +18,32 @@ export default async function BlogPage({
 }) {
   const dict = await getDictionary(lang);
   const posts = dict.blog.posts;
-
+  console.log(posts);
   return (
     <main className="container py-12 md:py-24">
       <div className="flex flex-col items-center space-y-4 text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
           {dict.blog.title}
         </h1>
-        <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed">
+        {/* <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed">
           {dict.blog.description}
-        </p>
+        </p> */}
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
+          // console.log();
           <Link key={post.id} href={`/${lang}/blog/${post.slug}`}>
             <Card className="h-full hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle>{post.title}</CardTitle>
-                <CardDescription>
+                {/* <CardDescription>
                   {post.date} · {post.readTime}
-                </CardDescription>
+                </CardDescription> */}
               </CardHeader>
-              <CardContent>
+              {/* <CardContent>
                 <p className="text-gray-500">{post.description}</p>
-              </CardContent>
+              </CardContent> */}
             </Card>
           </Link>
         ))}

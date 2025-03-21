@@ -73,10 +73,23 @@
       "title": "Tab Management",
       "description": "Easily manage your tabs to boost productivity"
     },
-    "bookmarks": {
+    "bookmarks": [{
       "title": "Bookmark Management",
-      "description": "Quickly access your bookmarks to enhance browsing efficiency"
-    },
+      "description": "Quickly access your bookmarks to enhance browsing efficiency",
+      "url": "https://www.baidu.com/"
+    },{
+      "title": "Bookmark Management",
+      "description": "Quickly access your bookmarks to enhance browsing efficiency",
+      "url": "https://www.baidu.com/"
+    },{
+      "title": "Bookmark Management",
+      "description": "Quickly access your bookmarks to enhance browsing efficiency",
+      "url": "https://www.baidu.com/"
+    },{
+      "title": "Bookmark Management",
+      "description": "Quickly access your bookmarks to enhance browsing efficiency",
+      "url": "https://www.baidu.com/"
+    }],
     "share": {
       "title": "Share",
       "description": "Easily share your tabs to boost collaboration efficiency"

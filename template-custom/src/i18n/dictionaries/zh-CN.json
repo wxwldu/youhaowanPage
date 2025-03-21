@@ -73,10 +73,23 @@
       "title": "标签管理",
       "description": "轻松管理您的标签页，提升工作效率"
     },
-    "bookmarks": {
+    "bookmarks": [{
       "title": "书签管理",
-      "description": "快速访问您的书签，提升浏览效率"
-    },
+      "description": "快速访问您的书签，提升浏览效率",
+      "url": "https://www.baidu.com/"
+    },{
+      "title": "书签管理",
+      "description": "快速访问您的书签，提升浏览效率",
+      "url": "https://www.baidu.com/"
+    },{
+      "title": "书签管理",
+      "description": "快速访问您的书签，提升浏览效率",
+      "url": "https://www.baidu.com/"
+    },{
+      "title": "书签管理",
+      "description": "快速访问您的书签，提升浏览效率",
+      "url": "https://www.baidu.com/"
+    }],
     "share": {
       "title": "分享",
       "description": "轻松分享您的标签页，提升协作效率"

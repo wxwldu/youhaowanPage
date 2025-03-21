@@ -67,7 +67,7 @@ export async function generateMetadata({
     openGraph: {
       type: "article",
       locale: params.lang,
-      url: `${url}/${params.lang}/blog/${params.slug}`,
+      url: '',
       title: post.title,
       description: post.description || dict.blog.description,
       publishedTime: post.date,
@@ -79,7 +79,7 @@ export async function generateMetadata({
       description: post.description || dict.blog.description,
     },
     alternates: {
-      canonical: `${url}/${params.lang}/blog/${params.slug}`,
+      canonical:'',
       languages: {
         "en-US": `${url}/en-US/blog/${params.slug}`,
         "zh-CN": `${url}/zh-CN/blog/${params.slug}`,

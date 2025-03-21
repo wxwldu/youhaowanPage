@@ -26,9 +26,12 @@ export default async function BlogPage({ params: { lang } }: { params: { lang: L
             <Card className="h-full hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle>{post.title}</CardTitle>
-                <CardDescription>
+                {/* <CardDescription>
                   {post.date} · {post.readTime}
-                </CardDescription>
+                </CardDescription> */
+                <Link href={''}>
+  <a target="_blank">Click this link</a>
+</Link>}
               </CardHeader>
               <CardContent>
                 <p className="text-gray-500">{post.description}</p>
