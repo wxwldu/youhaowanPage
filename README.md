@@ -1,117 +1,36 @@
-[English Documentation](README.md) | [中文文档](README_CN.md)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Getting Started
 
-# nextjs-saas-template
+First, run the development server:
 
-A simple and user-friendly, SEO-friendly Next.js template designed for quick setup of landing pages, SaaS websites, and more, without complex configurations.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-The template is continuously updated…
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Preview
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- `template-custom Black-and-white minimalist theme`
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-![1](./images/1.png)
+## Learn More
 
-![1](./images/2.png)
+To learn more about Next.js, take a look at the following resources:
 
-![1](./images/3.png)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-![1](./images/4.png)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-![1](./images/11.png)
+## Deploy on Vercel
 
-- `template-gradient Colorful gradient theme`
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-![1](./images/5.png)
-
-![1](./images/6.png)
-
-![1](./images/7.png)
-
-![1](./images/8.png)
-
-![1](./images/9.png)
-
-![1](./images/10.png)
-
-## Tech Stack
-
-- next.js 14
-- shadcn/ui
-- radix-ui
-- tailwindcss
-- lucide   
-- i18next
-- supabase
-- google oauth
-- github oauth
-
-## Features
-
-- Dark mode
-- SEO-friendly
-- Multi-language support
-- Blog
-- Pricing
-- Login/Registration(Email, Github, Google)
-- User dashboard
-
-## Usage
-
-- Clone the repository
-  ```bash
-  git clone git@github.com:jiweiyeah/nextjs-saas-template.git
-  ```
-- Install dependencies
-  ```bash
-  cd nextjs-saas-template/template-custom
-  npm install
-
-  cd nextjs-saas-template/template-gradient
-  npm install
-  ```
-- Configure environment variables
-  ```bash
-  NEXT_PUBLIC_SUPABASE_URL=xxxxx
-  NEXT_PUBLIC_SUPABASE_ANON_KEY=xxxxx
-  NEXT_PUBLIC_APP_URL=xxxxx
-
-  # Github OAuth
-  GITHUB_CLIENT_ID=xxxxx
-  GITHUB_CLIENT_SECRET=xxxxx 
-  GITHUB_CALLBACK_URL=xxxxx/api/auth/github/callback
-
-  # Google OAuth
-  GOOGLE_CLIENT_ID=xxxxx
-  GOOGLE_CLIENT_SECRET=xxxxx
-  ```
-- Run the project
-  ```bash
-  cd nextjs-saas-template/template-custom
-  npm run dev
-
-  cd nextjs-saas-template/template-gradient
-  npm run dev
-  ```
-
-## Deployment
-- [Vercel](https://vercel.com/docs)
-- [Netlify](https://docs.netlify.com/frameworks/next-js/overview/)
-
-## Contact
-
-Feel free to reach out and share your valuable feedback!
-
-Email: freeourdays@gmail.com
-
-Twitter: https://x.com/freeourdays
-
-WeChat: yeheboo
-
-<table>
-  <tr>
-    <td><img src="./images/WechatIMG248.jpg" alt="Image 1" width="200"></td>
-    <td><img src="./images/WechatIMG276.jpg" alt="Image 2" width="200"></td>
-  </tr>
-</table>
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
