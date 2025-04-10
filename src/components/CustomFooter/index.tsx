@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { Separator } from '@/components/ui/separator'
+import { useLocale } from '@/hooks'
 import { cn } from '@/lib/utils'
 import LocaleToggle from '@/widgets/locale-toggle'
 import ThemeToggle from '@/widgets/theme-toggle'
@@ -35,6 +36,7 @@ const UnderlineLink = ({
 }
 
 export function CustomFooter() {
+  // const { t } = useLocale()
   return (
     <div className="w-full flex justify-center items-center">
       <div className={cn(
@@ -44,22 +46,22 @@ export function CustomFooter() {
         'text-gray-500/[0.8] dark:text-zinc-300/[0.8]',
       )}
       >
-        <UnderlineLink
+        {/* <UnderlineLink
           link="https://creativecommons.org/licenses/by-nc-sa/4.0/"
           label="CC BY-NC-SA 4.0"
           underlineByDefault
-        />
-
+        /> */}
         <div className="flex items-center gap-[2px]">
           <span className="pl-[4px]">
-            Copyright ©
+            {/* { t('logoTitle') } */}
+            游好玩科技（深圳）有限公司 Copyright ©
             {' '}
             { new Date().getFullYear() }
           </span>
-          <UnderlineLink
+          {/* <UnderlineLink
             link="https://github.com/pdsuwwz"
             label="Wisdom"
-          />
+          /> */}
         </div>
 
         <Separator

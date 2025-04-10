@@ -17,7 +17,7 @@ export function SetupHero(props: Props) {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.badgeContainer}>
+        {/* <div className={styles.badgeContainer}>
           <a
             className={styles.badge}
             href="https://github.com/pdsuwwz/nextjs-nextra-starter"
@@ -26,7 +26,7 @@ export function SetupHero(props: Props) {
           >
             {t('badgeTitle')}
           </a>
-        </div>
+        </div> */}
         <h1 className={styles.headline}>
           <MotionWrapperFlash
             disabledAnimation={false}
@@ -35,16 +35,16 @@ export function SetupHero(props: Props) {
             <span className="icon-[emojione-v1--lightning-mood]"></span>
           </MotionWrapperFlash>
           {' '}
-          Nextra
+          { t('logoTitle') }
           {' '}
-          <br className="sm:hidden"></br>
+          {/* <br className="sm:hidden"></br>
           {' '}
           Starter
           <br className="sm:hidden"></br>
           {' '}
-          Template
+          Template */}
         </h1>
-
+        {/* <span>{ t('systemTitle') }</span> */}
         <Link
           href={`/${currentLocale}/upgrade`}
           className={clsx([
@@ -56,14 +56,14 @@ export function SetupHero(props: Props) {
             '[animation-duration:2s]',
           ])}
           dangerouslySetInnerHTML={{
-            __html: t('featureSupport', {
+            __html: t('description', {
               feature: `<span>Tailwind CSS v4, Nextra v4</span>`,
             }),
           }}
         />
 
 
-        <div className={clsx([
+        {/* <div className={clsx([
           styles.subtitle,
           'text-neutral-500 dark:text-neutral-300',
         ])}
@@ -111,8 +111,8 @@ export function SetupHero(props: Props) {
           >
             Aceternity UI
           </LinkPreview>
-        </div>
-        <div className="flex justify-center pt-10">
+        </div> */}
+        {/* <div className="flex justify-center pt-10">
           <div className="max-w-[500px] flex flex-wrap gap-[20px] max-sm:justify-center">
             <Button
               asChild
@@ -141,7 +141,7 @@ export function SetupHero(props: Props) {
               </Link>
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

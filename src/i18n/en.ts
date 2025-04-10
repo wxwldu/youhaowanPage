@@ -1,5 +1,8 @@
 export default {
-  systemTitle: '🚀 My Nextra Starter',
+  IncTitle: 'YoFun Technology (Shenzhen) Co., Ltd.',
+  systemTitle: '🚀 YoFun Technology',
+  logoTitle: 'Explore the World, Play Boundlessly',
+  description: '在乐趣中发现无限可能！',
   banner: {
     title: '👋 Hey there! Welcome to the Next.js Starter.',
     more: 'Check it out',

@@ -53,8 +53,8 @@ const CustomNavbar = async ({ lang }: I18nLangAsyncProps) => {
       logo={(
         <span>{ t('systemTitle') }</span>
       )}
-      logoLink={`/${lang}`}
-      projectLink={repo}
+      // logoLink={`/${lang}`}
+      // projectLink={repo}
     >
       <>
         <LocaleToggle className="max-md:hidden" />
@@ -108,9 +108,10 @@ export default async function RootLayout({ children, params }: Props) {
           disableTransitionOnChange
         >
           <Layout
-            banner={
-              <CustomBanner lang={lang} />
-            }
+          // // 注释掉banner头页面
+          //   banner={
+          //     <CustomBanner lang={lang} />
+          //   }
             navbar={
               <CustomNavbar lang={lang} />
             }
@@ -120,7 +121,7 @@ export default async function RootLayout({ children, params }: Props) {
               </LastUpdated>
             )}
             editLink={null}
-            docsRepositoryBase="https://github.com/pdsuwwz/nextjs-nextra-starter"
+            // docsRepositoryBase="https://github.com/pdsuwwz/nextjs-nextra-starter"
             footer={(
               <Footer className="bg-background py-5!">
                 <CustomFooter />

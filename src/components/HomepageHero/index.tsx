@@ -78,7 +78,39 @@ export default function HomepageHero() {
       </div> */}
       <div className="relative z-1 pb-10 md:pb-[100px]">
         <Section
-          title="Tech Stack"
+          // title="Features"
+          // description={t('featuresDesc')}
+        >
+          <div className="flex justify-center w-full max-w-7xl">
+            <HoverEffect items={processedFeatureList} />
+          </div>
+        </Section>
+        {/* <Section
+          title="Frequently Asked Questions"
+          tallPaddingY
+        >
+          <Accordion
+            type="single"
+            collapsible
+            className="w-full max-w-5xl"
+          >
+            {
+              faqs.map((faqItem, index) => (
+                <AccordionItem
+                  value={faqItem.question}
+                  key={index}
+                >
+                  <AccordionTrigger>{faqItem.question}</AccordionTrigger>
+                  <AccordionContent>
+                    {faqItem.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))
+            }
+          </Accordion>
+        </Section> */}
+        <Section
+          title="合作"
           titleProps={{
             disabledAnimation: false,
           }}
@@ -105,38 +137,6 @@ export default function HomepageHero() {
               <StackItem className="icon-[line-md--iconify1]" />
             </Marquee>
           </div>
-        </Section>
-        <Section
-          title="Features"
-          description={t('featuresDesc')}
-        >
-          <div className="flex justify-center w-full max-w-7xl">
-            <HoverEffect items={processedFeatureList} />
-          </div>
-        </Section>
-        <Section
-          title="Frequently Asked Questions"
-          tallPaddingY
-        >
-          <Accordion
-            type="single"
-            collapsible
-            className="w-full max-w-5xl"
-          >
-            {
-              faqs.map((faqItem, index) => (
-                <AccordionItem
-                  value={faqItem.question}
-                  key={index}
-                >
-                  <AccordionTrigger>{faqItem.question}</AccordionTrigger>
-                  <AccordionContent>
-                    {faqItem.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))
-            }
-          </Accordion>
         </Section>
       </div>
     </>

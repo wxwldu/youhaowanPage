@@ -1,5 +1,8 @@
 export default {
-  systemTitle: '🚀 Nextra 启动模板',
+  IncTitle: '游好玩科技（深圳）有限公司',
+  systemTitle: '🚀 游好玩科技',
+  logoTitle: '游世界，玩无限',
+  description: '在乐趣中发现无限可能！',
   banner: {
     title: '👋 嘿，欢迎来到 Next.js 起步模板!',
     more: '了解详情',
