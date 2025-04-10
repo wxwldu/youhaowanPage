@@ -16,41 +16,41 @@ export default {
 
   featureList: [
     {
-      title: 'Advanced Tech Stack',
-      description: 'Leveraging efficient React (v19) and support with Next.js, Nextra(v4) and Shadcn UI to build modern applications.',
+      title: 'No Wifi Games',
+      description: 'Players can enjoy various mini-games without internet connection.',
     },
     {
-      title: 'internationalization (i18n)',
-      description: 'Built-in multi-language support for easy i18n of your application, expanding your user base.',
+      title: 'sudoku',
+      description: 'Train your brain, activate your thinking - let every number become a testament to your wisdom!',
     },
     {
-      title: 'TypeScript Safety',
-      description: 'Fully integrated with TypeScript, offering static type checking to reduce runtime errors and enhance code reliability and maintainability.',
+      title: '2048',
+      description: 'Slide your fingers, merge the tiles, and witness the magical evolution from 2 to 2048!',
     },
     {
-      title: 'Iconify Icons',
-      description: 'Integrated with the Iconify icon set, offering a wide range of icons to enhance UI visual presentation.',
+      title: '游游爱收纳',
+      description: 'The organizing work here is all yours to complete!!!',
     },
     {
-      title: 'Tailwind CSS (v4)',
-      description: 'Atomic CSS integrated with Tailwind CSS, enabling efficient design and responsive UI.',
+      title: '倒水大师休闲',
+      description: 'Fun water division game that satisfies your OCD tendencies.',
     },
-    {
-      title: 'Code Standards',
-      description: 'Adheres to best practices with code standards and uses ESLint for quality checks and consistency.',
-    },
-    {
-      title: 'Dark Mode',
-      description: 'Supports dark mode for an enhanced nighttime experience.',
-    },
-    {
-      title: 'Rich Components & Extensible Support',
-      description: 'Offers a range of built-in components and supports flexible custom extensions.',
-    },
-    {
-      title: 'Lightweight Design',
-      description: 'Employs a lightweight design approach, streamlining project setup to focus on content creation.',
-    },
+    // {
+    //   title: 'Code Standards',
+    //   description: 'Adheres to best practices with code standards and uses ESLint for quality checks and consistency.',
+    // },
+    // {
+    //   title: 'Dark Mode',
+    //   description: 'Supports dark mode for an enhanced nighttime experience.',
+    // },
+    // {
+    //   title: 'Rich Components & Extensible Support',
+    //   description: 'Offers a range of built-in components and supports flexible custom extensions.',
+    // },
+    // {
+    //   title: 'Lightweight Design',
+    //   description: 'Employs a lightweight design approach, streamlining project setup to focus on content creation.',
+    // },
   ],
   featuresDesc: 'Easily build modern applications and kickstart your development process.',
   faqs: [

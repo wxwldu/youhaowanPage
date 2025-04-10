@@ -16,41 +16,41 @@ export default {
 
   featureList: [
     {
-      title: '先进的技术栈',
-      description: '高效的 React (v19) 框架，使用 Next.js、Nextra(v4) 和 Shadcn UI 打造现代化应用',
+      title: '游点好玩',
+      description: '玩家可以在没有互联网的情况下畅玩各种小游戏',
     },
     {
-      title: '国际化支持 (i18n)',
-      description: '内置多语言支持，轻松实现应用的国际化，扩大用户群体',
+      title: '游游数独',
+      description: '练脑益智，激活思维，让每一格数字都成为你智慧的见证！',
     },
     {
-      title: 'TypeScript 类型安全',
-      description: '全面集成 TypeScript，提供静态类型检查，减少运行时错误，提高代码可靠性和可维护性',
+      title: '游游2048',
+      description: '滑动指尖，智拼方格，见证数字奇迹从2到2048的进化之路！',
     },
     {
-      title: 'Iconify 图标集',
-      description: '纯 CSS 图标, 集成 Iconify 图标集，提供丰富的图标选择，增强 UI 视觉表现',
+      title: '游游爱收纳',
+      description: '这里的收纳整理工作就交给你啦！！！',
     },
     {
-      title: 'Tailwind CSS (v4)',
-      description: '使用原子化 CSS 框架 Tailwind CSS，快速构建高效设计、响应式界面 UI',
+      title: '倒水大师休闲',
+      description: '趣味分水小游戏，解决你的强迫症',
     },
-    {
-      title: '代码规范',
-      description: '遵循最佳实践的代码规范，结合 ESLint 进行代码质量检查与一致性维护',
-    },
-    {
-      title: '暗黑模式',
-      description: '支持暗黑模式，提供更好的夜间使用体验',
-    },
-    {
-      title: '丰富组件 & 支持自由扩展',
-      description: '提供丰富的预置组件，并支持灵活的自定义扩展',
-    },
-    {
-      title: '轻量化设计',
-      description: '采用轻量化设计，精简项目设置，专注于内容编写',
-    },
+    // {
+    //   title: '代码规范',
+    //   description: '遵循最佳实践的代码规范，结合 ESLint 进行代码质量检查与一致性维护',
+    // },
+    // {
+    //   title: '暗黑模式',
+    //   description: '支持暗黑模式，提供更好的夜间使用体验',
+    // },
+    // {
+    //   title: '丰富组件 & 支持自由扩展',
+    //   description: '提供丰富的预置组件，并支持灵活的自定义扩展',
+    // },
+    // {
+    //   title: '轻量化设计',
+    //   description: '采用轻量化设计，精简项目设置，专注于内容编写',
+    // },
   ],
   featuresDesc: '轻松构建现代应用，快速启动您的开发流程',
   faqs: [

@@ -46,6 +46,14 @@ export function CustomFooter() {
         'text-gray-500/[0.8] dark:text-zinc-300/[0.8]',
       )}
       >
+        {/* 添加图片组件 */}
+        <div className="flex justify-center pl-[10px]">
+          <img
+            className="dark:invert  ml-[10px]"
+            src="/img/logo.png"
+            style={{ width: '80px', height: 'auto' }}
+          />
+        </div>
         {/* <UnderlineLink
           link="https://creativecommons.org/licenses/by-nc-sa/4.0/"
           label="CC BY-NC-SA 4.0"

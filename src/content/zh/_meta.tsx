@@ -14,6 +14,7 @@ export default {
   introduction: {
     type: 'page',
     title: '这是介绍',
+    display: 'hidden',
     theme: {
       navbar: true,
       toc: false,
@@ -22,6 +23,7 @@ export default {
   examples: {
     title: '示例',
     type: 'page',
+    display: 'hidden',
   },
   upgrade: {
     title: (
@@ -31,5 +33,6 @@ export default {
       </span>
     ),
     type: 'page',
+    display: 'hidden',
   },
 } satisfies MetaRecord

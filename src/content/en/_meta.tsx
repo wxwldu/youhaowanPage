@@ -13,6 +13,7 @@ export default {
   },
   introduction: {
     type: 'page',
+    display: 'hidden',
     title: 'This is Introduction',
     theme: {
       navbar: true,
@@ -22,6 +23,7 @@ export default {
   examples: {
     title: 'Examples',
     type: 'page',
+    display: 'hidden',
   },
   upgrade: {
     title: (
@@ -31,5 +33,6 @@ export default {
       </span>
     ),
     type: 'page',
+    display: 'hidden',
   },
 } satisfies MetaRecord
