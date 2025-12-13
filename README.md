@@ -50,14 +50,14 @@
 
 - 安装依赖
 
-```bash
-pnpm i
+```bash pnpm i
+
 ```
 
 - 本地开发
 
-```bash
-pnpm dev
+```bash pnpm dev
+
 ```
 
 接着用浏览器打开 http://localhost:8000 即可访问服务

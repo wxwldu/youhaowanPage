@@ -13,7 +13,15 @@ import { getPageMap } from 'nextra/page-map'
 import { getDictionary, getDirection } from '../_dictionaries/get-dictionary'
 
 import { ThemeProvider } from './_components/ThemeProvider'
-import './styles/index.css'
+// import './styles/index.css'
+// 在 layout.tsx 中添加
+export async function generateStaticParams() {
+  return [
+    { lang: 'en' },
+    { lang: 'zh' },
+  ]
+}
+
 
 export const metadata = {
   // Define your metadata here
@@ -67,18 +75,21 @@ const CustomNavbar = async ({ lang }: I18nLangAsyncProps) => {
 
 interface Props {
   children: ReactNode
-  params: Promise<{ lang: I18nLangKeys }>
+  params: Promise<{ lang: string }>
 }
 
 export default async function RootLayout({ children, params }: Props) {
   const { lang } = await params
-  const dictionary = await getDictionary(lang)
-  const pageMap = await getPageMap(lang)
+  // 2.在这里进行类型断言，告诉 TS "我确定这个 string 是 I18nLangKeys"
+  const typedLang = lang as I18nLangKeys
+
+  const dictionary = await getDictionary(typedLang)
+  const pageMap = await getPageMap(typedLang)
 
   const title = 'My Nextra Starter'
   const description = 'A Starter template with Next.js, Nextra'
 
-  const { t } = await useServerLocale(lang)
+  const { t } = await useServerLocale(typedLang)
 
   return (
     <html
@@ -87,7 +98,7 @@ export default async function RootLayout({ children, params }: Props) {
       // Required to be set
       // dir="ltr"
       // Suggested by `next-themes` package https://github.com/pacocoursey/next-themes#with-app
-      dir={getDirection(lang)}
+      dir={getDirection(typedLang)}
       suppressHydrationWarning
     >
       <Head
@@ -113,7 +124,7 @@ export default async function RootLayout({ children, params }: Props) {
           //     <CustomBanner lang={lang} />
           //   }
             navbar={
-              <CustomNavbar lang={lang} />
+              <CustomNavbar lang={typedLang} />
             }
             lastUpdated={(
               <LastUpdated>
